@@ -1,0 +1,72 @@
+body {
+    background: linear-gradient(to left, #ffffff, #41d115, rgb(1, 138, 62));
+}
+
+.textInit {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.textInit h1 {
+    color: #41d115;
+}
+
+button {
+    background: none;
+    text-decoration: none;
+    border-radius: 30px;
+    border: #41d115 1px solid;
+    background-color: #ffffff;
+    width: 150PX;
+    height: 55px;
+    font-size: 17PX;
+}
+
+button:hover {
+    background-color: #41d115;
+    color: #ffffff;
+}
+
+.content {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 35px;
+    background-size: contain;
+    width: 50%;
+}
+
+li {
+    gap: 100px;
+    margin: 20px;
+}
+
+li,
+ul {
+    List-style-type: none
+}
+
+ul {
+    margin-top: 30PX;
+    margin-bottom: 30PX;
+    padding: 0;
+}
+
+@media screen and (max-width: 650px) {
+    .container{
+        width: 95%;
+    }
+}
