@@ -13,6 +13,11 @@ body {
 .textInit h1 {
     color: #41d115;
 }
+.btn{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
 
 button {
     background: none;
@@ -69,4 +74,4 @@ ul {
     .container{
         width: 95%;
     }
-}
+}   
