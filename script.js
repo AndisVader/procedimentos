@@ -1,6 +1,9 @@
 //A primeira função é para os procedimentos oftalmológicos
 
 function teste() {
+     alert('Vocês ainda usam isso? ')
+    alert('Me manda uma mensagem no whatsapp kkkkk')
+    
     alert("Atenção!! Agora você vai precisar digitar o código dos procedimentos.")
 
     var cons, tono, camp, paq, micro, cera, bio, pam, map, ret, ult
