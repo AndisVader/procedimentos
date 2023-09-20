@@ -1,12 +1,8 @@
 //A primeira função é para os procedimentos oftalmológicos
-
 function teste() {
-     alert('Vocês ainda usam isso? ')
-    alert('Me manda uma mensagem no whatsapp kkkkk')
-    
     alert("Atenção!! Agora você vai precisar digitar o código dos procedimentos.")
 
-    var cons, tono, camp, paq, micro, cera, bio, pam, map, ret, ult
+    var cons, tono, camp, paq, micro, cera, bio, pam, map, ret, ult, gonio, yag, teste, epi
 
     cons = prompt("Qual o código da Consulta Oftalmológica?")
     tono = prompt("Qual o código da Tonometria?")
@@ -19,6 +15,10 @@ function teste() {
     map = prompt("Qual o código do Mapeamento de Retina?")
     ret = prompt("Qual o código da Retinografia?")
     ult = prompt("Qual o código da Ultra-Sonografia?")
+    gonio = prompt("Qual o código da Gonioscopia?")
+    yag = prompt("Qual o código da Capsulotomia Yag Laser?")
+    teste = prompt("Qual o código do Teste de Schimmer?")
+    epi = prompt("Qual o código da Epilação?")
 
 
     document.getElementById("cons").innerHTML = "O código da consulta é: 10101012. Você respondeu com " + cons
@@ -42,6 +42,14 @@ function teste() {
     document.getElementById("ret").innerHTML = "O código da Retinografia é: 41301315. Você respondeu com " + ret
 
     document.getElementById("ultra").innerHTML = "O código da Ultra-sonografia é: 40901530. Você respondeu com " + ult
+
+    document.getElementById("gonio").innerHTML = "O código da Gonioscopia é: 41301242. Você respondeu com " + gonio
+
+    document.getElementById("yag").innerHTML = "O código do Yag Laser é 30306019. Você respondeu com " + yag
+
+    document.getElementById("teste").innerHTML = "O código do Teste de Schimmer é 41301170. Você respondeu com " + teste
+
+    document.getElementById("epi").innerHTML = "O código da Epilação é 30301122. Você respondeu com " + epi
 
 
     if (cons == 10101012) {
@@ -119,6 +127,33 @@ function teste() {
     } else {
         document.getElementById("acertu").innerHTML = "Você errou. Tente novamente. :("
     }
+
+    if (gonio == 41301242) {
+        document.getElementById("acert7").innerHTML = "Você acertou! Parabéns. ✓"
+    } else {
+        document.getElementById("acert7").innerHTML = "Você errou. Tente novamente. :("
+    }
+
+
+    if (yag == 30306019) {
+        document.getElementById("acert8").innerHTML = "Você acertou! Parabéns. ✓"
+    } else {
+        document.getElementById("acert8").innerHTML = "Você errou. Tente novamente. :("
+    }
+
+
+    if (teste == 41301170) {
+        document.getElementById("acert9").innerHTML = "Você acertou! Parabéns. ✓"
+    } else {
+        document.getElementById("acert9").innerHTML = "Você errou. Tente novamente. :("
+    }
+
+
+    if (epi == 30301122) {
+        document.getElementById("acert10").innerHTML = "Você acertou! Parabéns. ✓"
+    } else {
+        document.getElementById("acert10").innerHTML = "Você errou. Tente novamente. :("
+    }
 }
 
 //A segunda função se trata sobre os códigos dos médicos
@@ -126,7 +161,7 @@ function teste() {
 function medicos() {
     var jorge, juliane, carolina, marcelo, carlos
 
-    jorge = parseInt (prompt("Qual o CRM do Dr. Jorge Fernando?"))
+    jorge = parseInt(prompt("Qual o CRM do Dr. Jorge Fernando?"))
     juliane = prompt("Qual o CRM da Dra. Juliane Moledo?")
     carolina = prompt("Qual o CRM da Dra. Carolina Sampaio?")
     marcelo = prompt("Qual o CRM do Dr. Marcelo Silva?")
